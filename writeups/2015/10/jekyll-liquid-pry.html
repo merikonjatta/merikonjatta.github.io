@@ -5,13 +5,13 @@
 	<meta name="viewport" content="width=device-width initial-scale=1" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>Randomness | merikonjatta</title>
+	<title>JekyllのLiquidテンプレート内でpryする | merikonjatta</title>
 	<meta name="description" content="Japanese web developer Shinya Maeyama.
 ">
 
 	<link rel="stylesheet" href="/css/coderay.css">
 	<link rel="stylesheet" href="/css/main.css">
-	<link rel="canonical" href="https://merikonjatta.com/randomness">
+	<link rel="canonical" href="https://merikonjatta.com/writeups/2015/10/jekyll-liquid-pry.html">
 	<link rel="alternate" type="application/rss+xml" href="/feed.xml" />
 
 	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://merikonjatta.com/apple-touch-icon-144x144.png" />
@@ -50,43 +50,49 @@
 </div>
 
 
-			<div class="page">
-	<h1 class="title">Randomness</h1>
+			
+<div class="post ">
 
-	<div class="pages-list">
-		<ul>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			<li>
-				<a class="title imagelayered small blocklink" href="/randomness/nfl-english">
-					<div class="fg"><h3>NFLを楽しむための英語フレーズ辞典</h3></div>
-					<div class="bg" style="background-image:url(/randomness/brady-edelman.jpg);"></div>
-				</a>
-			</li>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-		</ul>
+	<div class="page-meta">
+		2015-10-29
 	</div>
+	<h1 class="title"><a href="/writeups/2015/10/jekyll-liquid-pry.html">JekyllのLiquidテンプレート内でpryする</a></h1>
+
+	
+
+	<article class="content">
+		<p>Liquidテンプレートはデバッグしにくい。どんな変数が使えて、どんなデータ構造になっているのか、そのあたりの透明性が低い。<code>{% binding.pry %}</code> しようとするとそんなタグねーよバカ！カス！ハゲ！と怒られる。</p>
+
+<p>そんなタグを定義すれば良いだけ。</p>
+
+<pre><code class="language-ruby"># _plugins/pry.rb
+class LiquidPryTag &lt; Liquid::Tag
+  def initialize(tag_name, markup, tokens)
+    super
+  end
+
+  def render(context)
+    context.pry
+  end
+end
+
+Liquid::Template.register_tag("pry", LiquidPryTag)
+</code></pre>
+
+	</article>
+
+	<nav class="oldernewer">
+		<div class="older">
+			 
+				<a rel="prev" href="/writeups/2015/10/git-forksync.html">&larr; Older</a>
+			
+		</div>
+		<div class="newer">
+			
+		</div>
+	</nav>
 </div>
+
 
 
 			<div class="footer">
