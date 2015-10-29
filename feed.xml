@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>merikonjatta</title>
+    <description>Japanese web developer Shinya Maeyama.
+</description>
+    <link>https://merikonjatta.com/</link>
+    <atom:link href="https://merikonjatta.com/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 29 Oct 2015 15:14:00 +0900</pubDate>
+    <lastBuildDate>Thu, 29 Oct 2015 15:14:00 +0900</lastBuildDate>
+    <generator>Jekyll v3.0.0</generator>
+    
+      <item>
+        <title>Githubのforkを一発で完全にupstreamに追いつかせる</title>
+        <description>&lt;p&gt;Githubでレポをforkしてcloneすると、3つのレポジトリと関わることになります。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;大元のレポ（upstreamとも呼ばれるが、僕はsuperと呼びたい）&lt;/li&gt;
+  &lt;li&gt;forkした自分のレポ（大概はこれがorigin）&lt;/li&gt;
+  &lt;li&gt;ローカルのレポ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;superが結構なスピードで開発されていると、originのブランチたちはあっという間に古くなっていきます。GithubではWeb UI上でsuper/masterの変更をorigin/masterに取り込む操作ができますが、ちょっと不便です。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;fast-forwardできる場面でもマージコミットが作られ、結果的にorigin/master is 1 ahead of super/master になってしまう&lt;/li&gt;
+  &lt;li&gt;ブランチが多いと面倒&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;というわけでググったのですが、大量のブランチを一気に処理する簡単な方法がすぐには見つからなかったので、&lt;a href=&quot;https://gist.github.com/362547702d3a8718c87e&quot;&gt;git-forksync&lt;/a&gt;といういかにもメンテされなさそうなスクリプトを書いてしまいました。たいへん捗るんですが、絶対再発明だろうと思うと腑に落ちない。&lt;/p&gt;
+
+&lt;p&gt;関係ないですが &lt;code&gt;git-foo&lt;/code&gt; というexecutableをPATHの通った所に置いておくと、 &lt;code&gt;git foo&lt;/code&gt; みたいにサブコマンドとして呼び出せることに気づきました。&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/362547702d3a8718c87e.js&quot;&gt; &lt;/script&gt;
+
+</description>
+        <pubDate>Tue, 20 Oct 2015 00:00:00 +0900</pubDate>
+        <link>https://merikonjatta.com/writeups/2015/10/git-forksync.html</link>
+        <guid isPermaLink="true">https://merikonjatta.com/writeups/2015/10/git-forksync.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>このサイトのために音楽の記事を生成するスクリプト</title>
+        <description>&lt;p&gt;&lt;a href=&quot;/writeups/2015/10/brad-mehldau-highway-rider.html&quot;&gt;こういう記事&lt;/a&gt;を書くために
+&lt;a href=&quot;https://gist.github.com/merikonjatta/4da452629415ea1de09c&quot;&gt;CD情報を色んな所から取得してJekyll用のmarkdownファイルを生成するスクリプト&lt;/a&gt;
+を書いた。たいへん捗る。&lt;/p&gt;
+
+&lt;noscript&gt;&lt;pre&gt;400: Invalid request
+&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/4da452629415ea1de09c.js&quot;&gt; &lt;/script&gt;
+
+</description>
+        <pubDate>Sun, 18 Oct 2015 00:00:00 +0900</pubDate>
+        <link>https://merikonjatta.com/writeups/2015/10/aotd-script.html</link>
+        <guid isPermaLink="true">https://merikonjatta.com/writeups/2015/10/aotd-script.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Avishai Cohen - Gently Disturbed</title>
+        <description>&lt;p&gt;Avishai Cohenの作品は、本人のベースもさることながら、ピアノの印象が強いものが多いです。
+ピアノあってこそのAvishaiだという気がします。&lt;/p&gt;
+
+&lt;p&gt;そのピアニストをAvishaiはよく取っ替え引っ替えするのですが、このアルバムで弾いている
+Shai Maestroが僕は一番好きです。Avishaiのために空気を作るにとどまらないピアノソロの凄さがあります。
+しかも珍しくピュアなピアノトリオ作品。&lt;/p&gt;
+
+&lt;p&gt;Bass: Avishai Cohen&lt;br /&gt;
+Drums: Mark Guiliana&lt;br /&gt;
+Piano: Shai Maestro&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://itunes.apple.com/album/id279396076?at=11l6Yq&amp;amp;ct=allmusic&quot;&gt;Apple Music&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.amazon.com/Gently-Disturbed-COHEN-AVISHAI/dp/B003TGW6P4&quot;&gt;Amazon&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://click.linksynergy.com/fs-bin/click?id=KteTUsO0Zkw&amp;amp;subid=&amp;amp;offerid=221756.1&amp;amp;type=10&amp;amp;tmpid=7950&amp;amp;RD_PARM1=http%3A%2F%2Fwww.rdio.com%2Fartist%2FAvishai_Cohen_Trio%2Falbum%2FGently_Disturbed%2F&quot;&gt;Rdio&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 17 Oct 2015 00:00:00 +0900</pubDate>
+        <link>https://merikonjatta.com/writeups/2015/10/avishai-cohen-gently-disturbed.html</link>
+        <guid isPermaLink="true">https://merikonjatta.com/writeups/2015/10/avishai-cohen-gently-disturbed.html</guid>
+        
+        
+        <category>music</category>
+        
+      </item>
+    
+      <item>
+        <title>Brad Mehldau - Highway Rider</title>
+        <description>&lt;p&gt;メルドー先生の良いところだけが出たアルバムです。
+二枚組を通して一貫したテーマが感じられます。ストーリー感がある。&lt;/p&gt;
+
+&lt;p&gt;これまでに聴いたメルドー作品の中では一番好きかもしれない。
+これまでに聴いたストリングス入りのジャズの中でも一番好きかもしれない。&lt;/p&gt;
+
+&lt;p&gt;サックスはDeweyの息子です。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://open.spotify.com/album/4tYokQ6vjGVHC0wEBMbeY0&quot;&gt;Spotify&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://itunes.apple.com/album/id359077400?at=11l6Yq&amp;amp;ct=allmusic&quot;&gt;Apple Music&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://www.amazon.com/Highway-Rider-Brad-Mehldau/dp/B003ALG5O6&quot;&gt;Amazon&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://click.linksynergy.com/fs-bin/click?id=KteTUsO0Zkw&amp;amp;subid=&amp;amp;offerid=221756.1&amp;amp;type=10&amp;amp;tmpid=7950&amp;amp;RD_PARM1=http%3A%2F%2Fwww.rdio.com%2Fartist%2FBrad_Mehldau%2Falbum%2FHighway_Rider%2F&quot;&gt;Rdio&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 16 Oct 2015 00:00:00 +0900</pubDate>
+        <link>https://merikonjatta.com/writeups/2015/10/brad-mehldau-highway-rider.html</link>
+        <guid isPermaLink="true">https://merikonjatta.com/writeups/2015/10/brad-mehldau-highway-rider.html</guid>
+        
+        
+        <category>music</category>
+        
+      </item>
+    
+      <item>
+        <title>人はなぜタワーを建てるのか</title>
+        <description>&lt;p&gt;大都市にはタワーがある。&lt;/p&gt;
+
+&lt;p&gt;東京タワー、333m。スカイツリー、634m。ストラトスフィア、350m。ブルジュ・ハリファ、830m。広州塔、600m。ピサの斜塔、56m。&lt;/p&gt;
+
+&lt;p&gt;タワーを建てられるようになり次第、即座にタワーを建てる。街が発展してきたら、とにかくまずはタワーを建てる。&lt;/p&gt;
+
+&lt;p&gt;人はなぜタワーを建てるだろうか。&lt;/p&gt;
+
+&lt;p&gt;観光資源になるからだとか、町おこしだとか、それらしい理由を並べることはできるが、きっと本当は限りなく原始的な欲求から来ているに違いない。それも極めて男性的な欲求だ。要は何かをおっ立ててデカさを誇示したいのだ。ほら見ろよ、おれのタワーはこんなにデカいんだぜ。あいつのタワーよりでかいだろう。ほらほら。&lt;/p&gt;
+
+&lt;p&gt;言い出しっぺの人たちは皆この欲求に逆らえずタワーを企画してしまう。当然稟議にかかるが、会議室にいる全員がやはりこの欲求に逆らえない。誰も口に出して言うわけではないし、電波を飛ばすんだとかなんとか大義名分があるのだが、別に誰もそんなことは気にしていない。「タワーいいじゃないですか」「ぜひ建てましょうタワー」。&lt;/p&gt;
+
+&lt;p&gt;たぶんその場にいる女性だけが覚めた気持ちで「なんでそんなに高くする必要があるの？」なんて思ってる。&lt;/p&gt;
+
+&lt;p&gt;しかるに、世界中にタワーが乱立しているのは、古来から男性が世の中を支配してきたからじゃないだろうか。女性本位の社会であればまた別の建築物が乱立していたかもしれない。&lt;/p&gt;
+
+&lt;p&gt;僕もタワーを建てるのには賛成だ。どんどん建ててくれ。京都タワーより美しいタワーは生まれないと思うが。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/kyoto-tower.jpg&quot; alt=&quot;Kyoto Tower&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 27 Aug 2014 00:00:00 +0900</pubDate>
+        <link>https://merikonjatta.com/writeups/2014/08/why-towers-are-built.html</link>
+        <guid isPermaLink="true">https://merikonjatta.com/writeups/2014/08/why-towers-are-built.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
