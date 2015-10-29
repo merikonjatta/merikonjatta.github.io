@@ -6,8 +6,8 @@
 </description>
     <link>https://merikonjatta.com/</link>
     <atom:link href="https://merikonjatta.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 29 Oct 2015 15:14:00 +0900</pubDate>
-    <lastBuildDate>Thu, 29 Oct 2015 15:14:00 +0900</lastBuildDate>
+    <pubDate>Thu, 29 Oct 2015 15:17:18 +0900</pubDate>
+    <lastBuildDate>Thu, 29 Oct 2015 15:17:18 +0900</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -39,6 +39,84 @@
         <pubDate>Tue, 20 Oct 2015 00:00:00 +0900</pubDate>
         <link>https://merikonjatta.com/writeups/2015/10/git-forksync.html</link>
         <guid isPermaLink="true">https://merikonjatta.com/writeups/2015/10/git-forksync.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>日本語タイトルのサンプルポスト</title>
+        <description>&lt;p&gt;ScrappleというEvernote再開発アプリを作ってる。ここんとこホテルにいる間はそればっ
+かりやっている。Redmineのwikiに限界を感じて以来ずっと作りたい作りたいと思って
+いたものだ。仕事をしてる事にはならないが一日を有意義に過ごせているし、Rackや
+Rubyについて新しい学びも多いのでAll goodだ。プログラミングを楽しいと感じたのも
+かなり久しぶりな気がして少し嬉しい。&lt;/p&gt;
+
+&lt;h2 id=&quot;h2&quot;&gt;これはH2ヘッディング&lt;/h2&gt;
+
+&lt;p&gt;いきなり&lt;code&gt;code&lt;/code&gt;を使ったら&lt;code&gt;File.glob(&quot;**/*.rb&quot;)&lt;/code&gt;どうなる？&lt;/p&gt;
+
+&lt;h3 id=&quot;h3&quot;&gt;これはH3&lt;/h3&gt;
+
+&lt;p&gt;サックスはDeweyの息子です。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-ruby&quot;&gt;class GithubService
+  BASE_URL = &#39;https://github.com&#39;
+
+  @@client = Octokit::Client.new(access_token: Settings.github_user_token)
+
+  def self.post_comment_to_pull_request repo_name_with_org, pull_request_number, comment
+    @@client.add_comment repo_name_with_org, pull_request_number, comment
+  end
+
+  def self.url(thing)
+    case thing
+    when User
+      &quot;#{BASE_URL}/#{thing.nickname}&quot;
+    when Repository
+      &quot;#{BASE_URL}/#{thing.name_with_org}&quot;
+    when Issue
+      &quot;#{url(thing.repository)}/issues/#{thing.number}&quot;
+    when PullRequest
+      &quot;#{url(thing.repository)}/pull/#{thing.number}&quot;
+    when Milestone
+      &quot;#{url(thing.repository)}/milestones/#{thing.title}&quot;
+    end
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h1 id=&quot;vim&quot;&gt;Vimで外部コマンドの出力を挿入する&lt;/h1&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;command&lt;/th&gt;
+      &lt;th&gt;result&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;:r! date&lt;/td&gt;
+      &lt;td&gt;Read command output, below cursor. Note how this line is long and will probably wrap.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;:0r! date&lt;/td&gt;
+      &lt;td&gt;Read command output, at top&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;:$r! date&lt;/td&gt;
+      &lt;td&gt;Read command output, at bottom&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;エクストリームわたあめ&lt;/h2&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/L3J9vj8gamQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+</description>
+        <pubDate>Tue, 20 Oct 2015 00:00:00 +0900</pubDate>
+        <link>https://merikonjatta.com/writeups/2015/10/sample-post.html</link>
+        <guid isPermaLink="true">https://merikonjatta.com/writeups/2015/10/sample-post.html</guid>
         
         
       </item>
