@@ -11,7 +11,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   appearance: none;
   background-color: #477dca;
   border: 0;
-  border-radius: 3px;
+  border-radius: 0.2em;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -60,7 +60,7 @@ input[type="color"], input[type="date"], input[type="datetime"], input[type="dat
 select[multiple=multiple] {
   background-color: #ebebeb;
   border: 1px solid #b1b1b1;
-  border-radius: 3px;
+  border-radius: 0.2em;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   font-family: "Roboto Slab", sans-serif;
@@ -151,6 +151,9 @@ body {
   line-height: 1.6;
   font-weight: 300; }
 
+.content {
+  text-align: justify; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto Slab", sans-serif;
   font-size: 15px;
@@ -194,8 +197,15 @@ img, picture {
   margin: 0;
   max-width: 100%; }
 
-.content p, .content pre, .content .CodeRay, .content table, .content ul, .content ol {
-  margin: 0 0 0.8em; }
+.content * + p,
+.content * + pre,
+.content * + .highlighter-coderay,
+.content * + .highlighter-rouge,
+.content * + .table,
+.content * + ul,
+.content * + ol,
+.content * + dl {
+  margin: 0 0 1.6em 0; }
 .content hr {
   border-top: 1px solid #b1b1b1;
   border-left: 0;
@@ -204,15 +214,25 @@ img, picture {
   margin: 1.6em 0; }
 .content pre, .content code, .content .CodeRay {
   font-family: Inconsolata, monospace; }
-.content pre, .content .CodeRay {
-  font-size: 12px;
-  line-height: 1.4; }
+.content .CodeRay {
+  font-size: 0.9em;
+  line-height: 1.4;
+  background: #f8f8f8;
+  padding: 0.3em 0.5em;
+  border-radius: 0.2em; }
 .content code {
-  font-size: 92%;
+  font-size: 0.9em;
   background: #f8f8f8;
   padding: 0 0.3em;
+  margin: 0 0.3em;
   border-radius: 2px;
   border: 1px solid #c4c4c4; }
+.content pre code {
+  font-size: inherit;
+  background: inherit;
+  padding: inherit;
+  border-radius: inherit;
+  border: inherit; }
 .content thead, .content th {
   font-weight: 300;
   color: #000000; }
@@ -2272,10 +2292,10 @@ body {
   margin: 0; }
 
 .header {
-  max-width: 708px;
+  max-width: 45.2em;
   margin-left: auto;
   margin-right: auto;
-  padding: 3.2em 24px; }
+  padding: 3.2em 1.6em; }
   .header::after {
     clear: both;
     content: "";
@@ -2313,7 +2333,7 @@ body {
       font-size: 17px;
       line-height: 1;
       margin: 0;
-      padding: 0 0 0 24px;
+      padding: 0 0 0 1.6em;
       display: inline-block; }
 
 .footer {
@@ -2321,10 +2341,10 @@ body {
 
 /*-------------------------------------------------------------------------------*/
 .page, .post {
-  max-width: 708px;
+  max-width: 45.2em;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 24px; }
+  padding: 0 1.6em; }
   .page::after, .post::after {
     clear: both;
     content: "";
@@ -2339,7 +2359,7 @@ body {
     width: 100%;
     height: auto;
     position: relative;
-    padding: 200px 12px 0.8em;
+    padding: 200px 0.8em 0.8em;
     color: #d8d8d8;
     text-shadow: 0px -1px 0px #141414; }
     .page .title.imagelayered .bg, .post .title.imagelayered .bg {
@@ -2359,7 +2379,7 @@ body {
       margin: 0;
       padding: 0; }
   .page .title.imagelayered.small, .post .title.imagelayered.small {
-    padding: 1.6em 12px; }
+    padding: 1.6em 0.8em; }
     .page .title.imagelayered.small .bg, .post .title.imagelayered.small .bg {
       background-position: 50% 20%; }
   .page a.title.imagelayered, .post a.title.imagelayered {
@@ -2383,11 +2403,6 @@ body {
     .post a.title.imagelayered:hover .bg {
       -webkit-filter: grayscale(50%) brightness(50%);
       filter: grayscale(50%) brightness(50%); }
-  .page .content, .post .content {
-    text-align: justify; }
-  .page .CodeRay, .post .CodeRay {
-    background: #f8f8f8;
-    padding: 4px 8px; }
 
 nav.oldernewer {
   border-top: 1px solid #ffffff;
@@ -2423,7 +2438,7 @@ nav.oldernewer {
 .pages-list .info {
   display: table-cell;
   vertical-align: top;
-  padding-left: 12px; }
+  padding-left: 0.8em; }
   .pages-list .info .meta {
     color: #626262;
     line-height: 1.5;
@@ -2437,7 +2452,7 @@ nav.oldernewer {
   width: 100%;
   height: auto;
   position: relative;
-  padding: 200px 24px;
+  padding: 200px 1.6em;
   color: #d8d8d8; }
   .greeter a {
     color: inherit; }
@@ -2453,7 +2468,7 @@ nav.oldernewer {
     .greeter .links a {
       display: inline-block;
       text-align: center;
-      margin: 0 24px 0 0; }
+      margin: 0 1.6em 0 0; }
   .greeter .bg {
     position: absolute;
     top: 0;

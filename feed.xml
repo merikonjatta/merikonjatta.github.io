@@ -6,9 +6,31 @@
 </description>
     <link>https://merikonjatta.com/</link>
     <atom:link href="https://merikonjatta.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 29 Oct 2015 16:29:04 +0900</pubDate>
-    <lastBuildDate>Thu, 29 Oct 2015 16:29:04 +0900</lastBuildDate>
-    <generator>Jekyll v3.0.0</generator>
+    <pubDate>Sun, 22 Nov 2015 02:36:56 +0900</pubDate>
+    <lastBuildDate>Sun, 22 Nov 2015 02:36:56 +0900</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>ffmpegで動画からgifを作る</title>
+        <description>&lt;p&gt;スクリーンキャプチャを動画で撮ってgifでアップしたい時など。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-coderay&quot;&gt;&lt;div class=&quot;CodeRay&quot;&gt;
+  &lt;div class=&quot;code&quot;&gt;&lt;pre&gt;ffmpeg -i source.mov -vf palettegen palette.png
+ffmpeg -i source.mov -i palette.png -lavfi &amp;quot;fps=15,scale=640:-1,paletteuse&amp;quot; out.gif
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/ffmpeg-gif-clean.gif&quot; alt=&quot;out.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;paletteuse&lt;/code&gt;を使わないとディザがかかってばっちいですが、これならキレイです。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 15 Nov 2015 00:00:00 +0900</pubDate>
+        <link>https://merikonjatta.com/writeups/2015/11/video-to-gif.html</link>
+        <guid isPermaLink="true">https://merikonjatta.com/writeups/2015/11/video-to-gif.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Githubのforkを一発で完全にupstreamに追いつかせる</title>

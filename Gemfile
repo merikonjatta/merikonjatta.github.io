@@ -7,6 +7,7 @@ gem "haml"
 
 group :jekyll_plugins do
   gem "pry"
+  gem "coderay"
   gem "jekyll-feed"
   gem "jekyll-sitemap"
   gem "jekyll-redirect-from"
